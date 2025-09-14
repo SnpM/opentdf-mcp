@@ -34,4 +34,6 @@ OpenTDF is a system that enables secure sharing and collaboration of sensitive d
 
 - VSCode GitHub Copilot developer/sysadmin extension
     - Custom policy-writing Chatmode agent that can pull existing policy context,  validate/simulate/publish policy, and iterate on code within the editor
-- OpenTDF-integrated LLM agent. Will interview the team for toy use cases we can proof-of-concept.
+    - Makes developers/sysadmins happy
+- OpenTDF-integrated LLM agent with web frontend. Will interview the team for toy use cases.
+    - Provides a pretty, interactive, and tangible example of MCP server usage
