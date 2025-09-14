@@ -24,7 +24,7 @@ OpenTDF is a system that enables secure sharing and collaboration of sensitive d
 ## Technical Stack
 
 - Go or JS (will ask Brian for advice and explore APIs further)
-    - Nibs is more comfortable with JS, and JS translates better to a web stack
+    - Nibs is more comfortable with JS, and JS has better MCP ecosystem
     - Go has the policy simulator
 - [OpenTDF Service](https://github.com/opentdf/platform) for core functionality
 - [OpenTDF Service](https://github.com/opentdf/platform) to authenticate clients and expose ABAC controlled MCP functions
