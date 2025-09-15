@@ -38,3 +38,4 @@ OpenTDF is a system that enables secure sharing and collaboration of sensitive d
     - Makes developers/sysadmins happy
 - OpenTDF-integrated LLM agent with web frontend. Will interview the team for toy use cases.
     - Provides a pretty, interactive, and tangible example of MCP server usage
+- ABAC agent authentication/authorization for MCP usage 
