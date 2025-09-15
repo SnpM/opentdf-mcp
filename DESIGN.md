@@ -8,6 +8,7 @@ OpenTDF is a system that enables secure sharing and collaboration of sensitive d
     - Simulate YAML policy (or run SAT solver)
         - LLM can evaluate result against user intent
     - Publish YAML policy (only with explicit user authorization)
+    - Use Copilot like a command line to interact with OpenTDF service
 - **General-purpose agents**
     - Authenticate with OIDC
         - Supervised agent can use human's ID; autonomous agents would get their own
