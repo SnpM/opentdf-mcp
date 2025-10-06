@@ -71,15 +71,15 @@ cd opentdf-mcp
 go build -o opentdf-mcp-server ./mcp-server
 ```
 
-### Environment Variables
+### Environment variables
 
-Configure the server using these environment variables:
+Configure the server using these environment variables. Defaults below reflect the demo setup used in examples:
 
-- `OPENTDF_PLATFORM_ENDPOINT` - Platform endpoint (default: http://localhost:8080)
-- `OPENTDF_CLIENT_ID` - Client ID for authentication (default: opentdf-sdk)
-- `OPENTDF_CLIENT_SECRET` - Client secret (default: secret)
+- `OPENTDF_PLATFORM_ENDPOINT` — Platform endpoint (default: `http://localhost:8080`)
+- `OPENTDF_CLIENT_ID` — Client ID for authentication (default: `opentdf-sdk`)
+- `OPENTDF_CLIENT_SECRET` — Client secret (default: `secret`)
 
-The defaults are configured for the demo OpenTDF platform with the demo client credentials that have proper KAS rewrap permissions.
+These values are used throughout the docs and example scripts. If you run the platform on a different host or port, update `OPENTDF_PLATFORM_ENDPOINT` accordingly.
 
 ## MCP Client Configuration
 

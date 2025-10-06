@@ -11,7 +11,9 @@ cd /workspaces/opentdf-demo-server/opentdf-mcp
 go build -o opentdf-mcp-server ./mcp-server
 ```
 
-### 2. Test Initialize Handshake
+### 2. Test initialize handshake
+
+Make sure `OPENTDF_PLATFORM_ENDPOINT` (and credentials) are set in your environment or in a copied `.env` file.
 
 ```bash
 (echo '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"test-client","version":"1.0"}}}'; sleep 1) | timeout 3 ./opentdf-mcp-server 2>&1
@@ -42,14 +44,15 @@ To use the MCP server with Claude Desktop:
 cp claude_desktop_config.example.json ~/Library/Application\ Support/Claude/claude_desktop_config.json
 ```
 
-2. Update the configuration with your paths and credentials:
+2. Update the configuration with your paths and credentials. Make sure `OPENTDF_PLATFORM_ENDPOINT` includes the protocol (for example `http://localhost:8080`):
+
 ```json
 {
   "mcpServers": {
     "opentdf": {
       "command": "/path/to/opentdf-mcp-server",
       "env": {
-        "OPENTDF_PLATFORM_ENDPOINT": "localhost:8080",
+        "OPENTDF_PLATFORM_ENDPOINT": "http://localhost:8080",
         "OPENTDF_CLIENT_ID": "opentdf-sdk",
         "OPENTDF_CLIENT_SECRET": "secret"
       }
@@ -60,7 +63,7 @@ cp claude_desktop_config.example.json ~/Library/Application\ Support/Claude/clau
 
 3. Restart Claude Desktop
 
-4. You should now see the OpenTDF tools available in Claude!
+4. The OpenTDF tools should appear in the client's tools/capabilities list.
 
 ## Available Tools
 

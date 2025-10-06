@@ -68,11 +68,13 @@ An MCP (Model Context Protocol) server for OpenTDF that exposes encryption, decr
 └─────────────────┘
 ```
 
-### Default Configuration
-- **Platform:** http://localhost:8080
-- **Client ID:** opentdf-sdk (has proper KAS permissions)
-- **Client Secret:** secret
-- **Format Preference:** nanoTDF (better compatibility)
+### Default configuration
+- **Platform:** http://localhost:8080 (set via `OPENTDF_PLATFORM_ENDPOINT`)
+- **Client ID:** opentdf-sdk (has proper KAS permissions) — set with `OPENTDF_CLIENT_ID`
+- **Client Secret:** secret — set with `OPENTDF_CLIENT_SECRET`
+- **Format preference:** nanoTDF (better compatibility)
+
+You can copy the provided `.env.template` to `.env` and adjust values for local testing.
 
 ## Quick Start
 
