@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "opentdf": {
+      "command": "./opentdf-mcp-server",
+      "env": {
+        "OPENTDF_PLATFORM_ENDPOINT": "http://localhost:8080",
+        "OPENTDF_CLIENT_ID": "opentdf-sdk",
+        "OPENTDF_CLIENT_SECRET": "secret"
+      }
+    }
+  }
+}
